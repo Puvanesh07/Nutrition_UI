@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import GoogleIcon from '@mui/icons-material/Google';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   return (
@@ -30,6 +31,7 @@ const LoginPage = () => {
             margin="normal"
             required
           />
+          <Link to="/bookyourslot" style={{ textDecoration: 'none' }}>
           <Button
             type="submit"
             variant="contained"
@@ -50,6 +52,7 @@ const LoginPage = () => {
           >
             Login
           </Button>
+          </Link>
         </form>
         <Typography variant="body2" align="center" sx={{ mt: 2 }}>
           Or login with

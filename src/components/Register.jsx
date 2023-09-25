@@ -12,6 +12,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
 import GoogleIcon from '@mui/icons-material/Google';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
 const RegisterPage = () => {
   const [values, setValues] = useState({
@@ -108,6 +109,7 @@ const RegisterPage = () => {
               }}
             />
           </FormControl>
+          <Link to="/login" style={{ textDecoration: 'none' }}>
           <Button
             type="submit"
             variant="contained"
@@ -129,15 +131,19 @@ const RegisterPage = () => {
           >
             Register
           </Button>
+          </Link>
         </form>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
-          <Button
-            variant="outlined"
-            startIcon={<GoogleIcon />}
-            sx={{ borderColor: 'rgba(0, 0, 0, 0.23)', color: 'rgba(0, 0, 0, 0.87)' }}
-          >
-            Sign in with Google
-          </Button>
+          {/* Use the Link component to navigate to the Google sign-up */}
+          <Link to="/google-login" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="outlined"
+              startIcon={<GoogleIcon />}
+              sx={{ borderColor: 'rgba(0, 0, 0, 0.23)', color: 'rgba(0, 0, 0, 0.87)' }}
+            >
+              Sign up with Google
+            </Button>
+          </Link>
         </div>
       </Paper>
     </Container>
