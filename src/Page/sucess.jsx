@@ -34,7 +34,7 @@ const InfoRow = () => {
         // Trigger animation when the element is 75% visible
         const elementsToAnimate = rowElement.querySelectorAll('.animate-text');
         elementsToAnimate.forEach((element, index) => {
-          setTimeout(() => animateText(element), index * 100); // Delay the animations
+          setTimeout(() => animateText(element), index * 20); // Delay the animations
         });
 
         // Remove the scroll listener once animations are triggered

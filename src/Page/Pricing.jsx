@@ -42,7 +42,7 @@ const PricingCard = ({ imageSrc, heading, price }) => {
         <Typography variant="h6" color="text.secondary" style={{ textAlign: "center" }}>
           Price: ${price}
         </Typography>
-        <Link to="/Book" style={{ textDecoration: "none" }}>
+        <Link to="/bookyourslot" style={{ textDecoration: "none" }}>
           <Button
             variant="contained"
             size="small"

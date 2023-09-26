@@ -53,7 +53,7 @@ const AppointmentCallCard = () => {
             variant="contained"
             color="primary"
             component={Link}
-            to="/book"
+            to="/bookyourslot"
             sx={{
               marginTop: 2,
               background: "linear-gradient(to right, #4CAF50, #8BC34A)",

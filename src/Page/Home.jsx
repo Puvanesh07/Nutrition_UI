@@ -68,7 +68,7 @@ const Home = () => {
               <Typography variant="body1" paragraph>
                 Discover the secrets of a healthy diet and lifestyle.
               </Typography>
-              <Link to="/Book" style={{ textDecoration: 'none' }}>
+              <Link to="/bookyourslot" style={{ textDecoration: 'none' }}>
                 <Button
                   variant="contained"
                   size="small"
